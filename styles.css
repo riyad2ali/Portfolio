@@ -213,6 +213,15 @@ img {
     text-align: center;
 }
 
+.language h4 {
+    padding-bottom: 20px;
+}
+
+.language .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card2 {
     width: 115px;
     height: 188px;
@@ -222,6 +231,12 @@ img {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in;
+}
+
+.card2:hover {
+    transform: translateY(-15px);
 }
 
 /* Utilities */
