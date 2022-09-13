@@ -239,6 +239,27 @@ img {
     transform: translateY(-15px);
 }
 
+/* Projects */
+
+.projects {
+    margin-top: 40px;
+    padding: 60px;
+    height: 100%;
+    background-color: var(--primary-color);
+    /* margin: 0 auto;
+    justify-content: center; */
+    display: flex;
+    justify-content: center;
+}
+
+.projectShowcase {
+    margin: 20px;
+    text-align: center;
+    background-color: cyan;
+    width: 200px;
+    height: 600px;
+}
+
 /* Utilities */
 
 a {
@@ -254,7 +275,6 @@ a {
 
 .flex {
     display: flex;
-
     height: 100%;
 }
 
