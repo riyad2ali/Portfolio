@@ -310,6 +310,10 @@ img {
     cursor: pointer;
 }
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
 
 /* Utilities */
 
