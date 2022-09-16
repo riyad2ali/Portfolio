@@ -12,15 +12,16 @@
     <title>Riyad Ali</title>
 </head>
 <body>
+    <script src="index.js"></script>
     <!-- Navigation bar -->
     <div class="navbar">
         <div class="container flex">
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li class="home-btn" onclick="homeScroll()">Home</li>
+                    <li class="about-btn" onclick="aboutScroll()">About Me</li>
+                    <li class="projects-btn" onclick="projectScroll()">Projects</li>
+                    <li class="contact-btn" onclick="contactScroll()">Contact</li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +31,7 @@
      <section class="showcase">
         <div class="container grid">
             <div class="showcase-text">
-                <img class="headshot" src="./img/Capture.PNG" alt="">
+                <img class="headshot" src="./img/Capture3.jpg" alt="">
                 <h2>Welcome to my portfolio</h2>
             </div>
             <div class="showcase-form card">
@@ -142,28 +143,28 @@
                 <p>The Automatic Rescue Breathing Unit (ARBU) automatically delivers 100% oxygen rescue breaths to assist CPR respiration. The ARBU consist of an oxygen tank, pneumatic circuit board (PCB), Arduino motherboard, a case, and other accessories to assist oxygen travel to a patient. The software makes sure the valves deliver the correct amount of volume, pressure, and rate to the user. I embedded the Arduino software to the PCB software to work together and I worked on the code to ensure the patient is receiving the right amount of oxygen with the correct parameters.</p>
             </div>
             <div class="projectShowcase">
-                <img src="img/music-player-gif.gif" alt="">
-                <h2>Music Player</h2>
-                <p>Created a responsive music player with React.js taping into TheAudioDB API to recive .mp4 files, music thumbnail, name and artist.</p>
-            </div>
-            <div class="projectShowcase">
                 <img src="img/Snake.gif" alt="">
                 <h2>Snake Game+</h2>
                 <p>Created a snake game replica utilizing only Java to create the logic and reasoning to make the game function. The hardest part about creating this project was the issue with the UI lagging when the snake got bigger. I fixed this issue by deallocating the snake length array and removed accessing the same function repetitively by carrying snake length into memory and only accessing the function to make sure the snake moves together once every half-second.</p>
             </div>
             <div class="projectShowcase">
-                <img src="img/Snake.gif" alt="">
-                <h2>Snake Game+</h2>
-                <P></P>
+                <img src="img/recipe.gif" alt="">
+                <h2>Recipe API</h2>
+                <P>This website uses Edeman Search API to search for different recipies and how to prepare each recipe. I used ReactJS and used Hooks, Asynchronous API to wait for responses from the API and CSS modules to create this website. This website was soley intended for me to work on and gain experiance on working with API's</P>
+            </div>
+            <div class="projectShowcase">
+                <img src="img/music-player-gif.gif" alt="">
+                <h2>Music Player</h2>
+                <p>Created a responsive music player with React.js taping into TheAudioDB API to recive .mp4 files, music thumbnail, name and artist.</p>
             </div>
         </div>
      </section>
      <!-- Contact Me -->
      <section class="contactMe">
         <div class="container">
-            <form class="contact">
+            <form class="contact" action="https://formsubmit.co/riyad2ali@outlook.com" method="POST">
                 <h1>Contact Me</h1>
-
+                <input type="hidden" name="_captcha" value="false">
                 <label >Name</label>
                 <input class="input-field" type="text" name="Name">
 
@@ -176,7 +177,7 @@
                 <label >Message</label>
                 <textarea name="input-field" name="Message"></textarea>
 
-                <button class="input-btn">Send</button>
+                <button class="input-btn" type="submit">Send</button>
             </form>
         </div>
      </section>
