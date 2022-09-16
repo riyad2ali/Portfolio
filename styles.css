@@ -355,5 +355,6 @@ a {
         margin: 0 auto;
         justify-content: center;
         justify-self: center;
+        place-items: center;
     }
 }
