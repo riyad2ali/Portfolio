@@ -37,7 +37,7 @@ function projectScroll() {
 
 function contactScroll() {
     window.scrollTo({
-        top: 2900,
+        top: 2630,
         behavior: 'smooth',
       })
 }
