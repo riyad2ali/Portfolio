@@ -251,6 +251,42 @@ img {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
+.githubBtn img {
+    contain: content;
+    height: 65px;
+    width: 65px;
+}
+
+.githubBtn p {
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+.githubBtn {
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    display: block;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 30px;
+}
+
+.githubBtn:hover {
+    cursor: pointer;
+}
+
+.recipie {
+    margin-bottom: 10px;
+}
+
+.recipie2 {
+    margin-top: 122px;
+}
 /* Contact me */
 
 .contact h1 {
